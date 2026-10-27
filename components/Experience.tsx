@@ -14,12 +14,16 @@ interface Job {
 
 const jobs: Job[] = [
   {
-    title: "Incoming Software Engineer Intern",
+    title: "Software Engineer Intern",
     company: "Capital One",
     location: "Chicago, IL",
-    period: "June 2026",
-    bullets: [],
-    upcoming: true,
+    period: "June 2026 – August 2026",
+    bullets: [
+      "Built a Slack Bolt bot in Python, hosted on AWS Fargate, that consumed PagerDuty-triggered alerts for expired production events over a socket connection, automating what was previously manual on-call triage.",
+      "Engineered a context-aggregation pipeline in Go that concurrently queried and correlated data from CloudWatch logs and DynamoDB tables using multithreading, assembling structured incident context in place of unenriched PagerDuty alerts.",
+      "Designed an LLM-powered root-cause-analysis workflow that transformed aggregated log and metadata context into concise actionable incident summaries, posted directly to the on-call Slack channel.",
+      "Reduced manual investigation time for on-call engineers by automating context-gathering and RCA generation across expired-event incidents, improving mean time to resolution."
+    ],
   },
   {
     title: "Software Engineer Intern",
